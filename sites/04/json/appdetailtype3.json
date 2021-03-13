@@ -1,0 +1,22 @@
+{
+    "data": {
+        "applyTitle": "xxxxxxxxxx",
+        "content": [
+            {
+                "name": "xxxxxxxxxx",
+                "department": "xxxxxxxxxx",
+                "idNumber": "xxxxxxxxxx",
+                "empID": "xxxxxxxxxx",
+                "printNumber": "1",
+                "applyTime": "xxxxxxxxxx",
+                "inServiceYear": "2017",
+                "inServiceMonth": "07",
+                "applyReason": "xxxxxxxxxx",
+                "hrOpinion": "",
+                "hrTime": ""
+            }
+        ]
+    },
+    "error": "",
+    "status": "0"
+}

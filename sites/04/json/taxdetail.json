@@ -1,0 +1,25 @@
+{
+  "data": {
+    "date": "2017-09",
+    "name": "xxxxxxxxxx",
+    "detail": {
+      "income": "44.88",
+      "bonus": "44",
+      "benifit": "44",
+      "fundTax": "0",
+      "incomeTotal": "44.88",
+      "deducted": "44",
+      "personalIncomeTax": "44.88",
+      "taxRate": "44%",
+      "quickSub": "44",
+      "incomeWithTax": "44.79",
+      "taxAdjustment": "0",
+      "seperateTax": "0",
+      "actualTax": "445.79",
+      "companyPaid": "0",
+      "withholdingTax": "0"
+    }
+  },
+  "error": "",
+  "status": "0"
+}
