@@ -1,0 +1,18 @@
+{
+    "data": {
+        "applyTitle": "xxxxxxxxxx",
+        "content": [
+            {
+                "name": "xxxxxxxxxx",
+                "department": "xxxxxxxxxx",
+                "idNumber": "xxxxxxxxxx",
+                "applyTime": "xxxxxxxxxx",
+                "applyReason": "xxxxxxxxxx",
+                "auditOpinion": "",
+                "auditTime": ""
+            }
+        ]
+    },
+    "error": "",
+    "status": "0"
+}
