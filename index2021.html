@@ -4,19 +4,43 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
-  <title>请点击数字查看</title>
+  <title>demos</title>
   <link rel="stylesheet" href="css/common.css" />
   <link rel="stylesheet" href="css/index.css">
+  <link rel="stylesheet" href="//at.alicdn.com/t/font_2385967_ce68n0ftwu.css">
 </head>
 <body>
   <div class="m-center flex-v">
     <div class="top">
+      <div class="m-datetime">
+        <p class="time"></p>
+        <p class="date"></p>
+      </div>
+      <div class="m-weather">
+        <i class="iconfont"></i>
+        <span class="msg"></span>
+      </div>
       <div class="m-back">〈</div>
     </div>
     <div class="cont flex-v">
       <div class="m-item-tabs">
         <div class="item">
-          <i class="icon-001"></i>
+          <i class="icon-001">m</i>
+        </div>
+        <div class="item">
+          <i class="icon-002">y</i>
+        </div>
+        <div class="item">
+          <i class="icon-003">d</i>
+        </div>
+        <div class="item">
+          <i class="icon-004">e</i>
+        </div>
+        <div class="item">
+          <i class="icon-005">m</i>
+        </div>
+        <div class="item">
+          <i class="icon-006">o</i>
         </div>
       </div>
       <div class="m-item-pages flex-v">
@@ -59,42 +83,10 @@
             demo很简单，主要展示一下整体结构和少许二次封装的组件。</p>
           <a href="DEMO006/index.html#/login" target="_blank">查看点击前往（请使用电脑查看） >></a>
         </div>
-        <div class="item flex-v">
-          <p>PC端基于Vue，element-ui组件库，根据实际业务进行对应的组件二次封装的说明文档。</p>
-          <a href="DEMO007/index.html#/" target="_blank">查看点击前往（请使用电脑查看） >></a>
-        </div>
       </div>
     </div>
   </div>
 </body>
-<script>
-  initRender()
-  initEvents()
-
-  function initRender() {
-    let tabs = document.querySelector('.m-item-tabs')
-    let tmphtml = ''
-    for(let i = 1; i < 8; i++) {
-      tmphtml += `<div class="item">
-        <i class="icon-00${i}">${i}</i>
-      </div>`
-    }
-    tabs.innerHTML = tmphtml
-  }
-  function initEvents() {
-    document.querySelectorAll('.m-item-tabs >.item').forEach((ele, index) => {
-      ele.addEventListener('click', event => {
-        document.querySelector('.m-center').classList.add('z-show')
-        document.querySelector('.m-item-pages >.z-show').classList.remove('z-show')
-        document.querySelectorAll('.m-item-pages >.item')[index].classList.add('z-show')
-        document.querySelector('body').className = 'color-' + (index + 1)
-      })
-    })
-
-    document.querySelector('.m-back').addEventListener('click', event => {
-      document.querySelector('.m-center').classList.remove('z-show')
-      document.querySelector('body').className = ''
-    })
-  }
-</script>
+<script src="js/mDatetime.js"></script>
+<script src="index.js"></script>
 </html>
